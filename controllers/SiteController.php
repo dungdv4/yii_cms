@@ -109,9 +109,16 @@ class SiteController extends Controller
 
             return $this->refresh();
         }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
+        //$data = $this->render('contact');
+       // $data =1;
+        $data = $this->renderContent('contact',array('model' => $model),true); 
+        //echo($data);
+   
+   //     die();
+        return $this->render('contact',array(
+            'model1' => $model, 'data'=>$data)
+            
+        );
     }
 
     /**

@@ -10,6 +10,11 @@ use yii\captcha\Captcha;
 
 $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
+$var = new yii\helpers\HtmlPurifier();
+$data1 = $var->process($data);
+$data1 = strip_tags($data1);
+print_r($data1);
+die();
 ?>
 <div class="site-contact">
     <h1><?= Html::encode($this->title) ?></h1>
