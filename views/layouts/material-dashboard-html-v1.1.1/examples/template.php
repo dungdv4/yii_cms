@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<?php  
+/*	use app\assets\AppAsset;
+	$this->registerJsFile("/path/to/your/file/in/web/folder/script.js");
+	$this->registerCss("../assets/css/bootstrap.min.css");
+	$this->registerCss("../assets/css/material-dashboard.css1");
+	$this->registerCss("../assets/css/demo.css");
+	$this->registerCss("http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css");
+	$this->registerCss("hthttp://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons");*/
+	?>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
 	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
@@ -46,7 +55,7 @@
 	    	<div class="sidebar-wrapper">
 	            <ul class="nav">
 	                <li class="active">
-	                    <a href="dashboard.html">
+	                    <a href="../views/layouts/dashboard.php">
 	                        <i class="material-icons">dashboard</i>
 	                        <p>Dashboard</p>
 	                    </a>
